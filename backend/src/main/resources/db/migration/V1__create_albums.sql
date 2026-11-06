@@ -1,0 +1,6 @@
+CREATE TABLE albums (
+    id BIGINT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
+    name VARCHAR (100) NOT NULL,
+    description TEXT,
+    created_at TIMESTAMP NOT NULL
+);
