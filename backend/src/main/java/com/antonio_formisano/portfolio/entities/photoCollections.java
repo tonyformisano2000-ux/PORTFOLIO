@@ -8,17 +8,19 @@ import java.time.LocalDateTime;
 @Getter
 @Setter
 @Entity
-@Table (name="albums")
-public class Album {
+@Table (name="photo_collections")
+public class photoCollections {
    @Id
    @GeneratedValue (strategy=GenerationType.IDENTITY)
    private Long id;
    @Column (nullable = false, length = 100)
-   private String name;
+   private String title;
    @Column
-   private String description;
+   private String mission;
    @Column (nullable = false)
    private LocalDateTime createdAt;
+   @Column
+   private Long coverPhotoId;
 
-   public Album() {}
+   public photoCollections() {}
 }
