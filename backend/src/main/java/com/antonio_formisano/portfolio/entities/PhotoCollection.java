@@ -9,7 +9,7 @@ import java.time.LocalDateTime;
 @Setter
 @Entity
 @Table (name="photo_collections")
-public class photoCollections {
+public class PhotoCollection {
    @Id
    @GeneratedValue (strategy=GenerationType.IDENTITY)
    private Long id;
@@ -22,5 +22,5 @@ public class photoCollections {
    @Column
    private Long coverPhotoId;
 
-   public photoCollections() {}
+   public PhotoCollection() {}
 }
