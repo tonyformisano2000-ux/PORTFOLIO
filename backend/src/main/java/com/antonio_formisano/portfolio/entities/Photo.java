@@ -31,7 +31,7 @@ public class Photo {
     private boolean featured;
     @Column
     private Integer homePosition;
-    @Column
+    @Column(nullable = false, updatable = false)
     @CreationTimestamp
     private LocalDateTime createdAt;
 }
